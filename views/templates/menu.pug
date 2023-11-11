@@ -1,0 +1,51 @@
+div.bg-dark.py-1
+    div.m-2
+        .row
+            .col-3
+                a.btn.btn-dark(data-bs-toggle='offcanvas' href='#offcanvasExample' style="border:white 2px solid;border-radius:4px;" )
+                    i.text-white.fw-bolder.fa-solid.fa-bars
+            .col-9.text-end
+                h4.px-2.text-white
+                    | User
+                    button.mx-2.btn.btn-dark(type='button')
+                        i.fa-solid.fa-cart-shopping
+                        span.badge.badge-light 9
+                        span.sr-only unread messages
+
+
+
+
+    #offcanvasExample.offcanvas.offcanvas-start.offcanvas-sm(tabindex='-1')
+        .offcanvas-header
+            h2#offcanvasExampleLabel.offcanvas-title.fw-bolder Menú
+            button.btn-close(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
+
+        .offcanvas-body
+            div
+
+                div.py-2
+                    a.text-dark.mx-2( href='/' style="border:white 1px solid;border-radius:10px;text-decoration:none;" )
+                        i.mx-2.fa-solid.fa-store
+
+                        | Nueva venta
+                div.py-2
+                    a.text-dark.mx-2( href='/' style="border:white 1px solid;border-radius:10px;text-decoration:none;" )
+                        i.mx-2.fa-solid.fa-window-restore
+
+                        | Histórico de ventas
+                div.py-2
+                    a.text-dark.mx-2( href='/' style="border:white 1px solid;border-radius:10px;text-decoration:none;" )
+                        i.mx-2.fa-solid.fa-paste
+                        | Productos
+                div.py-2
+                    a.text-dark.mx-2( href='/' style="border:white 1px solid;border-radius:10px;text-decoration:none;" )
+                        i.mx-2.fa-solid.fa-users
+                        | Usuarios
+
+            div.py-4
+                div.py-2
+                    a.text-dark.mx-2( href='/' style="border:white 1px solid;border-radius:10px;text-decoration:none;" )
+                        i.mx-2.fa-solid.fa-right-from-bracket
+                        |  Cerrar sesión
+        .offcanvas-footer
+            include footer

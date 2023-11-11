@@ -3,54 +3,65 @@ html
     head
         meta(charset='utf-8')
         meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
+
         title #{title}
         include templates/styles
 
-    body
 
-        .container-fluid.my-5
+
+
+    body
+        div.bg-dark.py-4
+
+
+        .container.my-1
             .row
-                .col-12.col-md-4
-                .col-12.col-md-4
+
+                .col-12.col-md-12
                     .card.border-0
                         .card-header.text-center.bg-transparent.border-0
 
-                            div.my-3
-                                img(src="./public/img/imgLeganux/logo.png" style="max-height:100px;").img-fluid
-
-                                span.fw-bolder Panel Admin
-                            h3 Iniciar sesión
-                        .card-body
-
-                            form#loginForm(role='form' action="api/users/loginPanel" method="POST")
-
-                                label Email
-                                input.form-control(type="email" name="email")#email
-                                label Contraseña
-                                input.form-control(type="password" name="password")#password
-                                br
-
-                                .text-center.py-2
-                                    button#loginBtn(type="subimt" ).btn.btn-block.btn-dark.w-100.my-2 Acceder
+                            div.py-3
+                                img(src="./public/img/logo_.png" style="max-height:200px;").img-fluid
 
 
+                            div.my-2
+                                .display-2.fw-bold Iniciar sesión
+
+                        .card-body.m-0.p-0
+                            //form#loginForm(role='form' action="api/users/loginPanel" method="POST")
 
 
-                .col-12.col-md-4
+                            .form-group.my-4
+                                input.form-control.custom-input(type="user" name="user" placeholder="Usuario" autocomplete="off")#user
+                            .form-group
 
+                                input.custom-input.form-control(type="password" name="password" placeholder="Contraseña" autocomplete="off")#password
+
+
+                            .text-center.py-4
+                               // button#loginBtn(type="subimt" ).btn.btn-block.btn-danger.button-radius.w-100.my-2 Acceder
+                               button#loginBtn.btn.btn-block.btn-dark.button-radius.w-100.my-2 Acceder
 
 
 
 
 
 
+
+
+
+
+
+
+        include templates/footer
         include templates/scripts
 
-        //script(src=url_js_files + '/common.js?v=' + Math.random())
-        //script.
-            var message_error = '!{message_error}';
+        script(src=url_js_files + '/common.js?v=' + Math.random())
+        script(src=url_js_files + '/login.js?v=' + Math.random())
 
-        //script(src=url_js_files + '/login.js?v=' + Math.random())
 
 
 

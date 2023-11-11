@@ -1,0 +1,27 @@
+/* Estilo personalizado para los inputs */
+.button-radius {
+    border-radius: 100px; /* Bordes cuadrados */
+
+}
+.custom-input {
+    border-radius: 100px; /* Bordes cuadrados */
+    border: 1px solid #ced4da; /* Borde del input */
+}
+
+.custom-input:focus {
+    border-color: #007bff; /* Color del borde cuando el input está enfocado */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Sombra al enfocar el input */
+}
+
+.gradient-card {
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    color: #fff; /* Cambia el color del texto según sea necesario */
+    border: none; /* Ajusta los bordes según sea necesario */
+    border-radius: 10px; /* Ajusta el radio de la esquina según sea necesario */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajusta la sombra según sea necesario */
+    transition: transform 0.3s ease-in-out; /* Agrega una transición suave si lo deseas */
+}
+
+.gradient-card:hover {
+    transform: scale(1.05); /* Escala la tarjeta al pasar el mouse si lo deseas */
+}
