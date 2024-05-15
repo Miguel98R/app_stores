@@ -1,24 +1,23 @@
-div.bg-dark.py-1
+div.bg-dark.py-2
     div.m-2
         .row
             .col-3
-                a.btn.btn-dark(data-bs-toggle='offcanvas' href='#offcanvasExample' style="border:white 2px solid;border-radius:4px;" )
+                a.btn.btn-dark(data-bs-toggle='offcanvas' href='#offcanvasExample' style="font-size:25px;")
                     i.text-white.fw-bolder.fa-solid.fa-bars
             .col-9.text-end
-                h4.px-2.text-white
+                button.mx-2.btn.btn-dark(type='button' style="font-size:18px;")
+                    i.mx-2.fa-solid.fa-user
                     | User
-                    button.mx-2.btn.btn-dark(type='button')
-                        i.fa-solid.fa-cart-shopping
-                        span.badge.badge-light 9
-                        span.sr-only unread messages
+
 
 
 
 
     #offcanvasExample.offcanvas.offcanvas-start.offcanvas-sm(tabindex='-1')
-        .offcanvas-header
-            h2#offcanvasExampleLabel.offcanvas-title.fw-bolder Menú
-            button.btn-close(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
+        .offcanvas-header.bg-dark
+            h2#offcanvasExampleLabel.offcanvas-title.fw-bolder.text-white Menú
+            button.btn-close.text-white(type='button' data-bs-dismiss='offcanvas')
+                i.fa-solid.fa-xmark
 
         .offcanvas-body
             div

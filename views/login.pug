@@ -16,34 +16,35 @@ html
         div.bg-dark.py-4
 
 
-        .container.my-1
-            .row
+        main
+            .container.my-1
+                .row
 
-                .col-12.col-md-12
-                    .card.border-0
-                        .card-header.text-center.bg-transparent.border-0
+                    .col-12.col-md-12
+                        .card.border-0
+                            .card-header.text-center.bg-transparent.border-0
 
-                            div.py-3
-                                img(src="./public/img/logo_.png" style="max-height:200px;").img-fluid
-
-
-                            div.my-2
-                                .display-2.fw-bold Iniciar sesión
-
-                        .card-body.m-0.p-0
-                            //form#loginForm(role='form' action="api/users/loginPanel" method="POST")
+                                div.py-3
+                                    img(src="./public/img/logo_.png" style="max-height:200px;").img-fluid
 
 
-                            .form-group.my-4
-                                input.form-control.custom-input(type="user" name="user" placeholder="Usuario" autocomplete="off")#user
-                            .form-group
+                                div.my-2
+                                    .display-2.fw-bold Iniciar sesión
 
-                                input.custom-input.form-control(type="password" name="password" placeholder="Contraseña" autocomplete="off")#password
+                            .card-body.m-0.p-0
+                                //form#loginForm(role='form' action="api/users/loginPanel" method="POST")
 
 
-                            .text-center.py-4
-                               // button#loginBtn(type="subimt" ).btn.btn-block.btn-danger.button-radius.w-100.my-2 Acceder
-                               button#loginBtn.btn.btn-block.btn-dark.button-radius.w-100.my-2 Acceder
+                                .form-group.my-4
+                                    input.form-control.custom-input(type="user" name="user" placeholder="Usuario" autocomplete="off")#user
+                                .form-group
+
+                                    input.custom-input.form-control(type="password" name="password" placeholder="Contraseña" autocomplete="off")#password
+
+
+                                .text-center.py-4
+                                   // button#loginBtn(type="subimt" ).btn.btn-block.btn-danger.button-radius.w-100.my-2 Acceder
+                                   button#loginBtn.btn.btn-block.btn-dark.button-radius.w-100.my-2 Acceder
 
 
 

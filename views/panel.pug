@@ -9,23 +9,26 @@ html
         title #{title}
         include templates/styles
 
+
     body
-        include templates/menu
+        .container-fluid
+            include templates/menu
 
 
-        .container-fluid.my-1
-            .row
-                .col-12.col-md-1
-                .col-12.col-md-10
+        main
 
 
-                    .text-center.py-4
-                        // button#loginBtn(type="subimt" ).btn.btn-block.btn-danger.button-radius.w-100.my-2 Acceder
-                        a(href="/newSale")#newSale.btn.btn-block.btn-dark.button-radius.w-100.my-2
-                            i.mx-2.fa-solid.fa-store
-                            | Nueva venta
-                .col-12.col-md-1
-        .container-fluid.my-1.text-center
+
+            .container-fluid.my-1
+
+                if menu
+                    each item in menu
+                        .text-center.py-1.mx-1
+                            button(id=item.id, class='btn btn-md btn-dark button-radius w-100 my-2')
+                                i.mx-2(class=item.icon)
+                                | #{item.text}
+
+        //.container-fluid.my-1.text-center
             .row
                 .col-12.col-md-4.py-2
                     .card.gradient-card
@@ -54,7 +57,7 @@ html
 
 
 
-
+        include templates/footer
 
 
 
